@@ -1,0 +1,19 @@
+# Compiling Time:  SBU
+# Maintainer:
+ 
+# Package description
+pkgname=xclip
+pkgver=0.11
+pkgrel=0
+pkgdesc="Command line interface to the clipboard"
+
+# Pacman variables
+depends=('libxmu')
+groups=(xapps-extra) # Why ? Because clipboard is in the GUI although this program is CLI
+archs=('i686' 'x86_64')
+
+# Compilation
+Finclude sourceforge
+sha1sums=('e65e287e48567d661d125c1a78e43d5d9f572cae')
+
+# optimization OK
